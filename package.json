@@ -9,14 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.8",
     "express": "^4.18.2",
-    "mocha": "^10.2.0",
-    "mongodb": "^4.4.1",
-    "request": "^2.88.2"
+    "mongodb": "^4.4.1"
   },
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "request": "^2.88.2"
+  }
 }
