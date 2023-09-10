@@ -37,12 +37,18 @@ function postCat(cat){
 }
 
 function getAllCats(){
-   $.get('/api/cat',(response)=>{
-      if(response.statusCode === 200){
-         addCards(response.data);
+   $.get('/api/cat',(result)=>{
+      if(result.statusCode === 200){
+         addCards(result.data);
       }
    });
 }
+
+
+let socket = io();
+socket.on('number',(message)=>{
+   console.log('the number is:' + message);
+});
 
 $(document).ready(function(){
    $('.materialboxed').materialbox();
